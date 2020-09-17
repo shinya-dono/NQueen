@@ -1,5 +1,5 @@
 """The n queens puzzle."""
-from Solution import Solution
+from algorithms.Abstracts.Solution import Solution
 
 
 class NQueensR(Solution):

@@ -1,5 +1,5 @@
 from itertools import permutations
-from Solution import Solution
+from algorithms.Abstracts.Solution import Solution
 
 """
     finds all Permutations of queens

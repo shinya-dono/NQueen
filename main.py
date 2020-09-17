@@ -1,8 +1,8 @@
 import argparse
 import time
 import matplotlib.pyplot as plt
-from Permutations import NQueensP
-from Recursion import NQueensR
+from algorithms.Permutations import NQueensP
+from algorithms.Recursion import NQueensR
 
 # creating parser to parse user inputs
 parser = argparse.ArgumentParser()
