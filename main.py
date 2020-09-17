@@ -25,7 +25,7 @@ args = parser.parse_args()
 # check if user has entered an array of N's or just a single N
 if len(args.numbers) < 2:
     #
-    numbers = args.numbers[0]
+    numbers = args.numbers
 else:
     numbers = args.numbers
 

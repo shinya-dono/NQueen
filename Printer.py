@@ -6,25 +6,23 @@ you can add your custom output method by defining your method and adding its nam
 your new method would be accessible by adding -d {index of your method in $draw_levels)
 ex : py main.py 13 -ddd
 
-
-* making those methods Private prevents from any call error
 """
 
 
 class Printer:
     def __init__(self, size):
         # stores possible methods for modular calls
-        self.draw_levels = ["__show_blank_board", "__show_short_board", "__show_full_board"]
+        self.draw_levels = ["show_blank_board", "show_short_board", "show_full_board"]
 
         # store size for iterating
         self.size = size
 
     # shows nothing
-    def __show_blank_board(self, position):
+    def show_blank_board(self, position):
         pass
 
     # Show the full NxN board
-    def __show_full_board(self, positions):
+    def show_full_board(self, positions):
 
         for row in range(self.size):
             line = ""
@@ -40,7 +38,7 @@ class Printer:
           Show the queens positions on the board in compressed form,
           each number represent the occupied column position in the corresponding row.
     """
-    def __show_short_board(self, positions):
+    def show_short_board(self, positions):
         line = ""
         for i in range(self.size):
             line += str(positions[i]) + " "
